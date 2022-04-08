@@ -4,11 +4,14 @@ input.onButtonPressed(Button.A, function () {
 input.onGesture(Gesture.Shake, function () {
     teller += 1
 })
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(teller)
+    basic.clearScreen()
+})
 let teller = 0
 teller = 0
-basic.showIcon(IconNames.Happy)
 basic.forever(function () {
-    basic.showNumber(teller)
+	
 })
 basic.forever(function () {
     if (teller == 10) {
