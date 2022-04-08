@@ -1,12 +1,12 @@
 input.onButtonPressed(Button.A, function () {
-    teller = 0
+    basic.showNumber(teller)
+    basic.clearScreen()
 })
 input.onGesture(Gesture.Shake, function () {
     teller += 1
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(teller)
-    basic.clearScreen()
+    teller = 0
 })
 let teller = 0
 teller = 0
